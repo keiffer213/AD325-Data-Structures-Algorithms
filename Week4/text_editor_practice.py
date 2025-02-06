@@ -59,8 +59,6 @@ class TextOperation:
         break
       else:
         print("Unkown input, please try again!")
-      
-      
 
 
 if __name__=="__main__":
