@@ -8,9 +8,8 @@ class Ticket:
 
   def __init__(self, ticket_num):
     self.ticket_num = ticket_num
-    # self.time_stamp = time_stamp
-    # self.time_stamp = datetime.datetime.now()
-    self.time_stamp = datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S,%f')
+    self.time_stamp = datetime.datetime.now()
+    # self.time_stamp = datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S,%f')
   
   def __str__(self):
     return f"Ticket #{self.ticket_num}, Timestamp: {self.time_stamp}"
