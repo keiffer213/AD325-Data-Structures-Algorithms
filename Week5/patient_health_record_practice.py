@@ -17,15 +17,13 @@ class SinglyLinkedList:
   def append(self, node):
     if self.head is None:
       self.head = node
-      self.length = 1
-      return
+    else:
+      last_node = self.head
 
-    last_node = self.head
+      while last_node.next is not None:
+        last_node = last_node.next
 
-    while last_node.next is not None:
-      last_node = last_node.next
-
-    last_node.next = node
+      last_node.next = node
     self.length += 1
 
   # Rather than storing length manually, best to dynammy retrieve the length of the linked list

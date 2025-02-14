@@ -5,6 +5,13 @@ class TestOrderProcessing(unittest.TestCase):
 
   def setUp(self):
     self.order_system = SinglyLinkedList()
+    self.orders = [
+      Order(1, 11, "A partridge in a pear tree"),
+      Order(2, 22, "Two french hens"),
+      Order(3, 33, "Three french hens"),
+      Order(4, 44, "Four calling birds"),
+      Order(5, 55, "Five golden rings"),
+    ]
     self.order1 = Order(1, 11, "A partridge in a pear tree")
     self.order2 = Order(2, 22, "Two french hens")
     self.order3 = Order(3, 33, "Three french hens")
