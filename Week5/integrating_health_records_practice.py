@@ -1,4 +1,3 @@
-from collections import deque
 
 class PatientRecord:
   def __init__(self, patient_name, patient_id, age, ssn):
